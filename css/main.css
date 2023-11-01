@@ -1,0 +1,216 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  /* This defines what 1rem is */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Because we want header to be sticky later */
+  height: 7rem;
+  padding: 0 13rem;
+  position: relative;
+  color: white;
+}
+
+.logo {
+  height: 3.6rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: flex;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  color: white;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.2rem 0;
+  margin-right: 1rem;
+}
+.main-nav-link:link.dotted-border,
+.main-nav-link:visited.dotted-border {
+  border-right: 1.5px dotted #666;
+  padding-right: 1.2rem;
+  margin-right: 1rem;
+}
+
+.main-nav-list li:last-child .main-nav-link {
+  margin-left: -0.95rem;
+  background-color: hsla(0, 0%, 100%, 0.15);
+}
+
+.icon-box {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-discount {
+  background-image: url("./../assets/icons/discount-50.png");
+}
+
+.icon-briefcase {
+  background-image: url("./../assets/icons/briefcase.png");
+}
+
+.icon-suitcase {
+  background-image: url("./../../assets/icons/suitcase.png");
+}
+
+.nav-link-header {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.nav-link-text {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.main-login-link {
+  background-image: linear-gradient(93deg, #53b2fe, #065af3);
+  padding: 1.2rem 0.8rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.main-login-link .login-my-text {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  color: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 1.5px 0;
+}
+.main-login-link .login-text::after {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  content: "";
+  display: inline-block;
+  margin: 0 1px 1.5px 2rem;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.main-country-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1.2rem 0.8rem;
+}
+.main-country-link .india-flag {
+  background-image: url("../../assets/icons/icons8-india-48.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18px;
+  width: 18px;
+}
+.main-country-link::after {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  content: "";
+  display: inline-block;
+  margin: 0 1px 1.5px 2rem;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.container {
+  background-size: 100% 547px;
+  background: #f2f2f2;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, #051322, #15457c);
+  background-size: 100% 438px;
+  min-height: 100vh;
+}

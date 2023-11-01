@@ -1,0 +1,12 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './base/base';
+@import './components/header';
+.container {
+  background-size: 100% 547px;
+  background: #f2f2f2;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, #051322, #15457c);
+  background-size: 100% 438px;
+  min-height: 100vh;
+}
