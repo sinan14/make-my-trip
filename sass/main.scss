@@ -2,11 +2,7 @@
 @import './abstracts/mixins';
 @import './base/base';
 @import './components/header';
-.container {
-  background-size: 100% 547px;
-  background: #f2f2f2;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to bottom, #051322, #15457c);
-  background-size: 100% 438px;
-  min-height: 100vh;
-}
+@import './components/second-nav';
+@import './components/flight-search-box';
+@import './components/footer';
+@import './components/faq-section';

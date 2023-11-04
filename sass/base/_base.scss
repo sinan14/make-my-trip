@@ -45,10 +45,19 @@ html {
 body {
   box-sizing: border-box;
   width: 100%;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Mukta', 'Lato', sans-serif;
+  font-size: 1.4rem;
   font-weight: 500;
   background-color: #fff;
+  color: $color-gray;
+}
+.container {
+  background: #f2f2f2;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, #051322, #15457c);
+  background-size: 100% 58.5rem;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .flex {
@@ -62,4 +71,10 @@ body {
 }
 .flex-col {
   flex-direction: column;
+}
+.font-light {
+  font-weight: 400;
+}
+.text-dec-none {
+  text-decoration: none;
 }

@@ -1,0 +1,55 @@
+.footer {
+  background: $color-black;
+  padding: 6rem 0;
+}
+.footer-bottom {
+  color: $color-white;
+  background-color: $color-black;
+  width: 120rem;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.social-media-links {
+  width: 11rem;
+  justify-content: space-between;
+  a {
+    width: 5rem;
+    height: 5rem;
+  }
+  .icon {
+    &-twitter {
+      width: 30px;
+      height: 24px;
+      background-position: -84px -132px;
+    }
+    &-fb {
+      width: 14px;
+      height: 30px;
+      background-position: -162px -126px;
+    }
+    background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/landingSprite@23x.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 200px 700px;
+    font-size: 0px;
+    flex-shrink: 0;
+  }
+}
+.copy-text-box {
+  text-align: right;
+  align-items: flex-end;
+  justify-content: center;
+}
+.copy-text {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: -1.2rem;
+}
+.locations {
+  margin-top: -0.8rem;
+  a {
+    font-weight: 900;
+    color: $color-white;
+    cursor: pointer;
+  }
+}

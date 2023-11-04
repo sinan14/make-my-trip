@@ -8,6 +8,12 @@
       src="https://kit.fontawesome.com/b3348ae33f.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&family=Mukta:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -70,20 +76,341 @@
                 </span>
               </a>
             </li>
-
-            <!-- <li><a class="main-nav-link" href="#meals">Meals</a></li>
-            <li>
-              <a class="main-nav-link" href="#testimonials">Testimonials</a>
-            </li>
-            <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-            <li>
-              <a class="main-nav-link nav-cta" href="#cta">Try for free</a>
-            </li> -->
           </ul>
         </nav>
       </header>
-      <main></main>
-      <footer class="footer"></footer>
+
+      <nav class="second-nav">
+        <ul class="second-nav-list flex">
+          <li class="active">
+            <a class="second-nav-link" href="#">
+              <span class="icon-wrapper">
+                <span class="icon-second-nav icon-flight"></span>
+              </span>
+              <span class="secondNavText">Flights</span>
+            </a>
+          </li>
+          <li>
+            <a class="second-nav-link" href="#">
+              <span class="icon-wrapper">
+                <span class="icon-second-nav icon-hotels"></span>
+              </span>
+              <span class="secondNavText">Hotels</span>
+            </a>
+          </li>
+          <li>
+            <a class="second-nav-link" href="#">
+              <span class="icon-wrapper">
+                <span class="icon-second-nav icon-homestays"></span>
+              </span>
+              <span class="secondNavText">Homestays & Villas</span>
+            </a>
+          </li>
+          <li>
+            <a class="second-nav-link" href="#">
+              <span class="icon-wrapper">
+                <span class="icon-second-nav icon-holiday"></span>
+              </span>
+              <span class="secondNavText">Holiday Packages</span>
+            </a>
+          </li>
+          <li>
+            <a class="second-nav-link" href="#">
+              <span class="icon-wrapper">
+                <span class="icon-second-nav icon-trains"></span>
+              </span>
+              <span class="secondNavText">Trains</span>
+            </a>
+          </li>
+          <li>
+            <a class="second-nav-link" href="#">
+              <span class="icon-wrapper">
+                <span class="icon-second-nav icon-buses"></span>
+              </span>
+              <span class="secondNavText">Buses</span>
+            </a>
+          </li>
+          <li>
+            <a class="second-nav-link" href="#">
+              <span class="icon-wrapper">
+                <span class="icon-second-nav icon-cabs"></span>
+              </span>
+              <span class="secondNavText">Cabs</span>
+            </a>
+          </li>
+          <li>
+            <a class="second-nav-link" href="#">
+              <span class="icon-wrapper">
+                <span class="icon-second-nav icon-forex"></span>
+              </span>
+              <span class="secondNavText">Forex Card & Currency</span>
+            </a>
+          </li>
+          <li>
+            <a class="second-nav-link" href="#">
+              <span class="icon-wrapper">
+                <span class="icon-second-nav icon-insurance"></span>
+              </span>
+              <span class="secondNavText">Travel Insurance</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flight-search-container">
+        <div class="journey-type-container flex">
+          <div class="radio-inputs">
+            <label class="radio-label">
+              <i class="fa-regular fa-circle"></i>
+              <input type="radio" name="journey-type" value="oneWay" />
+              One Way
+              <i class="fa-solid fa-circle-check"></i>
+            </label>
+
+            <label class="radio-label">
+              <input type="radio" name="journey-type" value="roundTrip" />
+              Round Trip
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-regular fa-circle"></i>
+            </label>
+
+            <label class="radio-label">
+              <input type="radio" name="journey-type" value="multiCity" />
+              Multi City
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-regular fa-circle"></i>
+            </label>
+          </div>
+          <p class="promo-text font-light">
+            Book international and Domestic Flights
+          </p>
+        </div>
+        <div class="flight-search-box flex">
+          <div class="box from-box">
+            <div class="inner-box">
+              <p class="text">From</p>
+              <p class="place">Mumbai</p>
+              <p class="airport-name">
+                BOM,Chatrapati Shivaji International India
+              </p>
+            </div>
+            <div class="arrow-container">
+              <span class="arrow-icon"></span>
+            </div>
+          </div>
+
+          <div class="box to-box">
+            <div class="inner-box">
+              <p class="text">To</p>
+              <p class="place">Bengaluru</p>
+              <p class="airport-name">
+                BLR,Bengaluru International Airport India
+              </p>
+            </div>
+          </div>
+          <div class="box date-box">
+            <div class="inner-box">
+              <p class="text">Departure</p>
+              <p class="full-date">
+                <span class="date-no">3</span
+                ><span class="date-rem">&nbsp;Nov'23</span>
+              </p>
+              <p class="airport-name">Friday</p>
+            </div>
+          </div>
+          <div class="box return-data-box">
+            <div class="inner-box">
+              <p class="text">Return</p>
+              <p class="pro-desc-text">
+                Tap to add a return date for bigger discounts
+              </p>
+            </div>
+          </div>
+          <div class="box travellers-no-box">
+            <div class="inner-box">
+              <p class="text">Travellers & Class</p>
+              <p class="pro-text">
+                <span class="date-no">1</span
+                ><span class="date-rem">&nbsp;Traveller</span>
+              </p>
+              <p class="airport-name">Economy/Premium Economy</p>
+            </div>
+          </div>
+        </div>
+        <div class="fare-type-container flex align-items-center">
+          <div class="fare-type-box flex align-items-center">
+            <span class="select-fare">
+              Select A<br />
+              Fare Type:
+            </span>
+            <ul class="special-fare-list flex">
+              <li class="fare-list-item active">
+                <p>
+                  Regular
+                  <br />
+                  Fares
+                </p>
+              </li>
+              <li class="fare-list-item">
+                <p>
+                  Armed Forces
+                  <br />
+                  Fares
+                </p>
+              </li>
+              <li class="fare-list-item">
+                <p>
+                  Student
+                  <br />
+                  Fares
+                </p>
+              </li>
+              <li class="fare-list-item">
+                <p>
+                  Senior Citizen
+                  <br />
+                  Fares
+                </p>
+              </li>
+              <li class="fare-list-item">
+                <p>
+                  Doctors & Nurses
+                  <br />
+                  Fares
+                </p>
+              </li>
+              <li class="fare-list-item">
+                <p>
+                  Double Seat
+                  <br />
+                  Fares
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="trending-search-box flex align-items-center">
+            <span>Trending Searches:</span>
+            <ul class="trending-list flex">
+              <li>
+                <a href="#">
+                  Delhi
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                  Dubai
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Delhi
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                  paris
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="search-btn primaryBtn">SEARCH</button>
+      </div>
+      <div style="height: 555px"></div>
+      <main>
+        <section class="quick_links"></section>
+        <section class="faq-section">
+          <ul class="faq-list">
+            <li class="faq">
+              <h2 class="faq-Q">
+                Q - How do I make a flight booking on MakeMyTrip?
+              </h2>
+              <p class="faq-A">
+                A: You can book a flight on MakeMyTrip in five easy steps: Head
+                over to the MakeMyTrip flight booking page, Enter your departure
+                and arrival destinations, Select your air travel dates, Choose
+                from our wide range of cheap flights based on your airfare
+                preferences, Click on ‘Book Now’ and your air flight booking is
+                done. Alternatively, you can also use the MakeMyTrip app for
+                your flight ticket booking. Download the MakeMyTrip app, Put in
+                the details i.e. date of journey, departure and arrival
+                destinations, travel class of your choice, Select on your best
+                comfortable option and click on 'Book Now'.
+              </p>
+            </li>
+            <li class="faq">
+              <h2 class="faq-Q">
+                Q - Can I avail domestic flight offers on MakeMyTrip?
+              </h2>
+              <p class="faq-A">
+                A: Of course, you can. While making domestic flight bookings,
+                you can avail any special offer that is active at that time. In
+                accordance with the offer selected, a listing of eligible
+                cheapest flights would show up on your screen. You can then
+                apply the price filter and click on the downwards arrow,
+                following which budget-friendly flights would start showing up
+                in ascending order from the top (lowest price on top).
+              </p>
+            </li>
+            <li class="faq">
+              <h2 class="faq-Q">
+                Q - How can I avail budget air tickets on MakeMyTrip?
+              </h2>
+              <p class="faq-A">
+                A: It’s super-easy to avail budget airfare while booking your
+                cheap flight tickets on MakeMyTrip. Just select the ‘Price’
+                filter once the available flight options are displayed and
+                adjust according to your convenience. On the MakeMyTrip app, you
+                can select the downward arrow, which will show the lowest
+                airfare at the top and continue downward in ascending order.
+              </p>
+            </li>
+            <li class="faq">
+              <h2 class="faq-Q">
+                Q - Why could I not avail the flight booking offers at the time
+                of checkout?
+              </h2>
+              <p class="faq-A">
+                A: MakeMyTrip makes use of a world-class real-time reservation
+                database to list airfare and availability. As dynamic changes in
+                airfare take place, or the available flight tickets sell out,
+                the database reflects the changes in real-time. Hence, we
+                suggest, you double-check online flight booking prices when
+                purchasing flight tickets, as the airfare might have been
+                dynamically updated since you first selected the air travel
+                dates or planned your itinerary.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-bottom flex align-items-center">
+          <div class="social-media-links align-items-center flex">
+            <a
+              href="#"
+              class="align-items-center justify-content-center text-dec-none"
+            >
+              <span class="icon-twitter icon"> </span>
+            </a>
+            <a
+              href="#"
+              class="align-items-center justify-content-center text-dec-none"
+            >
+              <span class="icon-fb icon"> </span>
+            </a>
+          </div>
+          <div class="copy-text-box flex align-items-center flex-col">
+            <p class="copy-text">© 2023 MAKEMYTRIP PVT. LTD.</p>
+            <p class="locations">
+              Country
+              <span>
+                <a href="#" class="text-dec-none">India</a>
+                <a href="#" class="text-dec-none">USA</a>
+                <a href="#" class="text-dec-none">UAE</a>
+              </span>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
