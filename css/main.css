@@ -73,6 +73,10 @@ body {
   justify-content: center;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -865,4 +869,143 @@ section forex promo start
   display: inline-block;
   background-size: 200px 700px;
   font-size: 0px;
+}
+
+.app-promo {
+  width: 120rem;
+  margin: 0 auto;
+  padding: 1rem 6rem 4rem 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 3rem 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 2rem;
+  align-items: flex-end;
+}
+
+.app-download-img {
+  width: 92px;
+  height: 96px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: scale(0.6);
+  margin-left: -28px;
+  background: url(https://imgak.mmtcdn.com/pwa_v3/pwa_mmt_ui_assets/app-sprite.webp) no-repeat;
+  display: inline-block;
+  background-size: 250px 250px;
+  font-size: 0px;
+  flex-shrink: 0;
+  background-position: -155px -4px;
+}
+
+.download-heading-text {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: black;
+  line-height: 5rem;
+}
+
+.download-promotional-text {
+  line-height: 1.8rem;
+}
+.download-promotional-text strong {
+  font-weight: 900;
+  color: black;
+}
+
+.mobinput-section {
+  margin-top: 2.4rem;
+}
+
+.mob-input {
+  width: 28rem;
+  height: 4rem;
+  border: solid 1px #9b9b9b;
+  background-color: #ffffff;
+  outline: 0;
+  padding: 0 9px;
+  font-weight: 400;
+  color: #292828;
+  font-size: 1.4rem;
+  border-radius: 0;
+  border-left: 0;
+  font-family: Lato;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.btn-getapp-link {
+  width: 16rem;
+  height: 4rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  border: solid 1px #008cff;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #008cff;
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+}
+
+.input-flag-box {
+  padding-top: 1px;
+  display: flex;
+  border-right: 0px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #9b9b9b;
+  border-right: 0px;
+  position: relative;
+}
+
+.flag-wrapper {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+  margin-right: 0.5rem;
+  align-items: center;
+  display: flex;
+  width: 2.3rem;
+}
+
+.flag-country-code {
+  font-family: Lato;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #000;
+  font-weight: 700;
+}
+
+.appstore-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-right: 36px;
+}
+.appstore-icons span {
+  background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_mmt_ui_assets/app-sprite.webp);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 250px 250px;
+  font-size: 0px;
+  flex-shrink: 0;
+  width: 149px;
+  height: 44px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.getgoogleplay {
+  background-position: -3px -55px;
+  margin: 0 0 20px;
+}
+
+.getappstore {
+  background-position: -3px -6px;
+}
+
+.qr-box img {
+  height: 105px;
 }
