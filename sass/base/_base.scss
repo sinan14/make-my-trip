@@ -59,7 +59,9 @@ body {
   min-height: 100vh;
   width: 100%;
 }
-
+main {
+  position: relative;
+}
 .flex {
   display: flex;
 }
@@ -77,6 +79,9 @@ body {
 }
 .font-light {
   font-weight: 400;
+}
+.font-bold {
+  font-weight: 700;
 }
 .text-dec-none {
   text-decoration: none;

@@ -1,0 +1,51 @@
+.explore-more {
+  box-shadow: 0 1px 3rem 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 3rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+  width: 100rem;
+  position: absolute;
+  left: 50%;
+  top: -2.4rem;
+  transform: translate(-50%, -100%);
+  &-header {
+    position: absolute;
+    top: -2.4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 1.2rem;
+    .icDoubleDownArrow {
+      width: 12px;
+      height: 13px;
+    }
+    .explore-more-headerText {
+      font-size: 1.3rem;
+      color: #fff;
+    }
+  }
+}
+.chooseFrom-list {
+  perspective: 1000px;
+}
+.choosefrom-item {
+  padding: 12px 15px;
+  gap: 1.2rem;
+  &:not(:last-child) {
+    border-right: 1px#d8d8d8 solid;
+  }
+}
+.choosefrom-text {
+  gap: 2px;
+}
+.font12 {
+  font-size: 12px;
+  line-height: 12px;
+}
+.font14 {
+  font-size: 14px;
+  line-height: 14px;
+}
+.blackText {
+  color: black;
+}
