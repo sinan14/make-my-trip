@@ -18,17 +18,22 @@
 
 .second-nav-list {
   gap: 4rem;
-  .active {
+  li.active {
     position: relative;
+  }
+  li.active .secondNavText {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: $color-primary;
   }
   li.active::after {
     position: absolute;
-    bottom: 0;
+    bottom: -0.9rem;
     left: 0;
     content: '';
     display: inline-block;
     width: 100%;
-    height: 0.3rem;
+    height: 0.33rem;
     background-color: #008cff;
     border-radius: 1rem;
     z-index: 2;
