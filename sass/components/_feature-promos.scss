@@ -1,0 +1,20 @@
+.feature-promos {
+  width: 120rem;
+  margin: 0 auto 2rem;
+}
+.promo-slide {
+  font-weight: 400;
+  flex: 1;
+  margin: 5px;
+  border-radius: 6px;
+  padding: 16px 30px;
+  min-height: 80px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  gap: 1rem;
+  color: $color-gray;
+  a {
+    color: $color-primary;
+    text-decoration: none;
+  }
+}
