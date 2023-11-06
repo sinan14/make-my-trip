@@ -15,7 +15,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/slider.js"></script>
   </head>
   <body>
     <div class="container">
@@ -81,7 +80,131 @@
         </nav>
       </header>
 
-      <nav class="second-nav">
+      <nav class="second-nav sticky-nav hide-stickynav" id="sticky-nav">
+        <div class="sticky-nav-container flex space-between">
+          <span class="logoContainer"
+            ><a class="chMmtLogo" href="#"
+              ><img
+                src="//imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/logo@2x.png"
+                alt="MMT's LOGO" /></a
+          ></span>
+          <ul class="second-nav-list flex">
+            <li class="active">
+              <a class="second-nav-link" href="./index.html">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-flight"></span>
+                </span>
+                <span class="secondNavText">Flights</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="./hotel.html">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-hotels"></span>
+                </span>
+                <span class="secondNavText">Hotels</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="./homestay.html">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-homestays"></span>
+                </span>
+                <span class="secondNavText">Homestays & Villas</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="./holiday.html">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-holiday"></span>
+                </span>
+                <span class="secondNavText">Holiday Packages</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="#">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-trains"></span>
+                </span>
+                <span class="secondNavText">Trains</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="#">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-buses"></span>
+                </span>
+                <span class="secondNavText">Buses</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="#">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-cabs"></span>
+                </span>
+                <span class="secondNavText">Cabs</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="#">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-forex"></span>
+                </span>
+                <span class="secondNavText">Forex Card & Currency</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="#">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-insurance"></span>
+                </span>
+                <span class="secondNavText">Travel Insurance</span>
+              </a>
+            </li>
+          </ul>
+          <div class="flex align-items-center login-container-wrapper">
+            <ul class="flex align-items-center login-prompt-container cursor">
+              <li class="flex">
+                <span class="userInfoBoxLabel whiteText mr10 font10 textCenter"
+                  ><span class="chSprite chLoggedOutLogo chMy"></span
+                ></span>
+                <div class="flex align-items-center">
+                  <div class="flex space-between flex-col">
+                    <span
+                      class="font-bold login-prompt-text"
+                      style="margin-bottom: 2px"
+                      >Login or</span
+                    >
+                    <span class="font-bold login-prompt-text"
+                      >Create Account</span
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="flex align-items-center ccchangelist cursor">
+              <li class="flex blacText flex-col">
+                <p>Country</p>
+                <p class="flex align-items-center">
+                  <span class="india-flag"></span>
+                  <span class="font-bold">India</span>
+                  <span class="arrowdown"></span>
+                </p>
+              </li>
+            </ul>
+            <ul class="flex align-items-center ccchangelist">
+              <li class="flex blacText flex-col">
+                <p>Language</p>
+                <p class="flex align-items-center">
+                  <span class="font-bold">ENG</span>
+                  <span class="arrowdown"></span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="second-nav" id="second-nav">
         <ul class="second-nav-list flex">
           <li class="active">
             <a class="second-nav-link" href="./index.html">
@@ -391,38 +514,7 @@
             </li>
           </ul>
         </section>
-        <section class="offers-section"></section>
-        <!-- <section class="offers-section">
-          <div class="carousel-container">
-            <div class="item fade">
-              <div class="image">
-                <img src="https://bit.ly/34xczKy" alt="Image 1" />
-              </div>
-            </div>
-            <div class="item fade">
-              <div class="image">
-                <img src="https://bit.ly/3lkp5DW" alt="Image 2" />
-              </div>
-            </div>
-            <div class="item fade">
-              <div class="image">
-                <img src="https://bit.ly/3iMHuI1" alt="Image 3" />
-              </div>
-              <div class="text is-text-centered">
-                <p>
-                  <i class="fas fa-info-circle"></i>
-                  &nbsp;This item has a caption, aligned to the center.
-                </p>
-              </div>
-            </div>
-            <span href="#" class="prev">
-              <i class="fas fa-angle-left"></i>
-            </span>
-            <span href="#" class="next">
-              <i class="fas fa-angle-right"></i>
-            </span>
-          </div>
-        </section> -->
+
         <section class="feature-promos flex space-between">
           <div class="promo-slide flex align-items-center pointer">
             <div class="flex align-items-center justify-content-center">
@@ -1061,5 +1153,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/sticky-header.js"></script>
   </body>
 </html>

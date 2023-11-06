@@ -111,6 +111,63 @@ main {
   font-size: 1.6rem;
 }
 
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.font-light {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-dec-none {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.whiteText {
+  color: white;
+}
+
+.font10 {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.mr10 {
+  margin-right: 1rem;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -277,7 +334,7 @@ main {
 }
 .second-nav-list li.active::after {
   position: absolute;
-  bottom: -0.9rem;
+  bottom: 0;
   left: 0;
   content: "";
   display: inline-block;
@@ -310,6 +367,7 @@ main {
   justify-content: center;
   margin-bottom: 4px;
   width: 52px;
+  position: relative;
 }
 .icon-flight {
   background-position: -5px -44px;
@@ -356,9 +414,6 @@ main {
   height: 29px;
   width: 25px;
 }
-.icon-insurance, .icon-forex {
-  position: relative;
-}
 .icon-insurance::before, .icon-forex::before {
   content: "NEW";
   position: absolute;
@@ -369,9 +424,9 @@ main {
   background: linear-gradient(45deg, #ec2127, #ec2127);
   font-size: 1rem;
   font-weight: 600;
-  top: -2.4em;
+  top: -1.3rem;
   border-radius: 0.8rem;
-  padding: 0 0.6rem;
+  padding: 0.2rem 0.6rem;
 }
 
 .secondNavText {
@@ -382,6 +437,184 @@ main {
   color: #4a4a4a;
 }
 
+.hide-stickynav {
+  transform: translate3d(0, -155%, 0);
+}
+
+.show-stickynav {
+  animation: slideInDown 0.2s linear;
+  transform: translate(0%, -30%);
+}
+
+.sticky-nav-container {
+  margin: 0 auto;
+  width: 120rem;
+  padding: 1rem 0 1.2rem;
+}
+
+.sticky-nav {
+  display: flex !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+}
+.sticky-nav li.active .secondNavText {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.sticky-nav li.active::after {
+  display: none !important;
+}
+.sticky-nav .second-nav-link:link,
+.sticky-nav .second-nav-link:visited {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  align-items: center;
+}
+.sticky-nav .second-nav-list {
+  gap: 1rem;
+  padding-right: 20rem;
+}
+.sticky-nav .icon-second-nav {
+  background-size: 156px 240px;
+}
+.sticky-nav .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+  margin-bottom: 4px;
+  width: 3.1rem;
+}
+.sticky-nav .icon-flight {
+  background-position: -3px -2.5px;
+  height: 20px;
+  width: 25px;
+}
+.sticky-nav .icon-hotels {
+  background-position: -36.5px 0;
+  height: 24px;
+  width: 21.5px;
+}
+.sticky-nav .icon-homestays {
+  background-position: -34px -50px;
+  height: 22px;
+  width: 26.4px;
+}
+.sticky-nav .icon-holiday {
+  background-position: -65px -2.2px;
+  height: 20px;
+  width: 25px;
+}
+.sticky-nav .icon-trains {
+  background-position: -94px -1.8px;
+  height: 22px;
+  width: 28px;
+}
+.sticky-nav .icon-buses {
+  background-position: -126px -1.2px;
+  height: 21.6px;
+  width: 25.8px;
+}
+.sticky-nav .icon-cabs {
+  background-position: -66px -49px;
+  height: 22.2px;
+  width: 23.4px;
+}
+.sticky-nav .icon-forex {
+  background-position: -100px -50px;
+  height: 20px;
+  width: 18px;
+}
+.sticky-nav .icon-insurance {
+  background-position: -126px -46.7px;
+  height: 29px;
+  width: 25px;
+}
+.sticky-nav .icon-insurance::before, .sticky-nav .icon-forex::before {
+  display: none;
+}
+.sticky-nav .secondNavText {
+  font-size: 1.2rem;
+  line-height: 15px;
+}
+.sticky-nav .logoContainer {
+  display: flex;
+  font-size: 1.4rem;
+  margin-right: 25px;
+  min-width: 120px;
+}
+.sticky-nav .logoContainer .chMmtLogo {
+  display: inline-block;
+  height: 36px;
+  width: 113px;
+}
+.sticky-nav .logoContainer .chMmtLogo img {
+  width: 100%;
+}
+.sticky-nav .login-prompt-container .userInfoBoxLabel {
+  font-weight: 900;
+  background-image: linear-gradient(45deg, #ace143, #219393);
+  border-radius: 50%;
+  height: 25px;
+  padding: 6px;
+  width: 25px;
+}
+.sticky-nav .login-prompt-container .chLoggedOutLogo {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  background-position: -177px -350px;
+  background-size: 260px 400px;
+  background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png) !important;
+  background-repeat: no-repeat;
+}
+.sticky-nav .login-prompt-container .login-prompt-text {
+  line-height: 1.2rem;
+  font-size: 1.1rem;
+}
+.sticky-nav .login-container-wrapper {
+  gap: 2.4rem;
+}
+.sticky-nav .ccchangelist .india-flag {
+  background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/flagSprite2.png);
+  background-repeat: no-repeat;
+  background-size: 16px 74px;
+  background-position: 0 0;
+  height: 12px;
+  width: 15px;
+  margin-right: 0.33rem;
+}
+.sticky-nav .ccchangelist li {
+  gap: 0.4rem;
+  font-size: 1rem;
+}
+.sticky-nav .ccchangelist .arrowdown {
+  border-bottom: 0;
+  border-right: 2px solid #008cff;
+  border-top: 2px solid #008cff;
+  display: inline-block;
+  height: 5px;
+  margin: 0 10px;
+  padding: 2px;
+  width: 5px;
+  transform: rotate(135deg) skew(7deg, 7deg);
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(0, -30%, 0);
+  }
+}
 .flight-search-container {
   margin: 8rem 15rem 0;
   background-color: #fff;
@@ -1048,78 +1281,6 @@ section forex promo start
 .promo-slide a {
   color: #008cff;
   text-decoration: none;
-}
-
-/* Carousel container styles */
-.carousel-container {
-  width: 100%;
-  height: 40rem;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.375rem;
-  /* Item styles */
-  /* Image styles */
-  /* Previous and Next button styles */
-}
-.carousel-container .item {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: none;
-  animation: fade 0.3s ease-in-out;
-}
-.carousel-container .image {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.carousel-container img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.carousel-container .prev,
-.carousel-container .next {
-  width: 2rem;
-  height: 2rem;
-  padding: 0.3125rem;
-  position: absolute;
-  top: calc(50% - 1rem);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  font-size: 1rem;
-  color: #f2f2f2;
-  border-radius: 50%;
-  transition: 0.6s ease;
-}
-.carousel-container .prev:focus,
-.carousel-container .prev:hover,
-.carousel-container .next:focus,
-.carousel-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-.carousel-container .prev {
-  left: 0.8rem;
-}
-.carousel-container .next {
-  right: 0.8rem;
-}
-
-/* Keyframes for fade animation */
-@keyframes fade {
-  from {
-    opacity: 0.8;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.offers-section {
-  width: 120rem;
-  margin: 3rem auto;
 }
 
 .explore-more {

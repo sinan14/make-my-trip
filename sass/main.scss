@@ -1,6 +1,7 @@
 @import './abstracts/variables';
 @import './abstracts/mixins';
 @import './base/base';
+@import './abstracts/utilities';
 @import './components/header';
 @import './components/second-nav';
 @import './components/flight-search-box';
@@ -9,5 +10,5 @@
 @import './components/footnav-section';
 @import './components/apppromotion';
 @import './components/feature-promos';
-@import './components/slider';
+
 @import './components/explore-more';

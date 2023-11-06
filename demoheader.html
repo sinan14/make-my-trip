@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* resets */
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      /* main */
+      header {
+        height: 360px;
+        z-index: 10;
+      }
+      .header-banner {
+        background-color: #333;
+        background-image: url('https://37.media.tumblr.com/8b4969985e84b2aa1ac8d3449475f1af/tumblr_n3iftvUesn1snvqtdo1_1280.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+      }
+
+      header h1 {
+        background-color: rgba(18, 72, 120, 0.8);
+        color: #fff;
+        padding: 0 1rem;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+      }
+
+      nav {
+        width: 100%;
+        height: 60px;
+        background: #292f36;
+        postion: fixed;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(-300px);
+      }
+      .fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation: bounceDown 0.3s 300ms both;
+      }
+      @keyframes bounceDown {
+        0% {
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+          visibility: visible;
+        }
+
+        100% {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      nav div {
+        color: white;
+        font-size: 2rem;
+        line-height: 60px;
+        position: absolute;
+        top: 0;
+        left: 2%;
+        visibility: hidden;
+      }
+      .visible-title {
+        visibility: visible;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0 2% auto 0;
+        padding-left: 0;
+        text-align: right;
+        max-width: 100%;
+      }
+      nav ul li {
+        display: inline-block;
+        line-height: 60px;
+        margin-left: 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #a9abae;
+      }
+
+      /* demo content */
+      body {
+        color: #292f36;
+        font-family: helvetica;
+        line-height: 1.6;
+      }
+      .content {
+        margin: 0 auto;
+        padding: 4rem 0;
+        width: 960px;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-banner">
+        <h1>Visit Finland</h1>
+      </div>
+      <div class="clear"></div>
+      <nav>
+        <div class="site-title">Finland</div>
+        <ul>
+          <li><a href="/archive">Archive</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="content" style="height: 888px"></section>
+    <script>
+      /* ========================================== 
+scrollTop() >= 100
+Should be equal the the height of the header
+========================================== */
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          document.querySelector('nav').classList.add('fixed-header');
+          document.querySelector('nav div').classList.add('visible-title');
+        } else {
+          document.querySelector('nav').classList.remove('fixed-header');
+          document.querySelector('nav div').classList.remove('visible-title');
+        }
+      });
+    </script>
+  </body>
+</html>
