@@ -1,0 +1,189 @@
+.superOfferSection {
+  width: 120rem;
+  margin: 3rem auto 2rem;
+}
+.offerlist-container {
+}
+.offer-item {
+  outline: none;
+  padding: 0 10px 10px 0;
+  display: inline-block;
+}
+.offer-card {
+  border-radius: 6px;
+
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  margin: 5px 10px 5px 2px;
+  padding: 1rem;
+  cursor: pointer;
+}
+.cardInnerInfo {
+  min-height: 14rem;
+}
+.itemThumb {
+  width: 135px;
+  margin-top: 0 !important;
+}
+.itemImgWrap {
+  width: 100%;
+  height: 115px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #dfdddf, #efefef);
+  background-size: 400%;
+  height: 125px !important;
+  position: relative;
+  .img {
+    display: block;
+    width: 100%;
+    max-height: 135px;
+    border-radius: 6px;
+  }
+}
+.itemDesc {
+  width: 290px;
+}
+
+.offer-card-title {
+  margin-top: 0;
+}
+.redBdr {
+  width: 33px;
+  height: 1px;
+  background: #eb2026;
+  display: flex;
+}
+
+.sliderFoot {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.sliderFoot__left {
+  width: 135px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.tcApplyText {
+  width: 120px;
+  text-align: center;
+}
+.superOfferSection {
+  min-height: 300px;
+}
+.landingCard {
+  border-radius: 10px;
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 25px 40px 40px;
+}
+.allCardsHeader {
+  font-size: 3.2rem !important;
+  color: black !important;
+  font-weight: 900 !important;
+}
+.superOffersTab {
+  border-bottom: solid 1px #c6c6c6;
+
+  li {
+    padding: 5px;
+    margin-right: 20px;
+    border-bottom: solid 3px #fff;
+    transition: all 0.2s linear;
+    position: relative;
+  }
+  li.darkGreyText {
+    font-weight: 400;
+  }
+  .active {
+    border-bottom: solid 3px $color-primary;
+    color: $color-primary;
+  }
+}
+.superOfferSection .viewAllCta {
+  margin: 0px 12.8rem 0 0;
+  margin-left: auto !important;
+  .landingSprite {
+    background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/landingSprite@23x.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 200px 700px;
+    font-size: 0px;
+    flex-shrink: 0;
+  }
+  .blueArrowIcon {
+    background-position: -174px -86px;
+    width: 24px;
+    height: 10px;
+  }
+}
+.landingCardSlider .slick-next {
+  right: 33px;
+  border: solid 1px;
+}
+.landingCardSlider button {
+  position: absolute;
+  top: -65px;
+  width: 36px;
+  height: 33px;
+  background: #ffffff;
+  font-size: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.landingCardSlider .slick-next {
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 2px 0px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.landingCardSlider button {
+  border-color: #f1f1f1 !important;
+}
+.landingCardSlider .slick-next:before,
+.landingCardSlider .slick-prev:before {
+  border: solid var(--color-slider-track);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: relative;
+  right: 0;
+  top: 0px;
+  content: '';
+  font-family: 'Lato';
+}
+.landingCardSlider .slick-disabled.slick-next:before,
+.landingCardSlider .slick-disabled.slick-prev:before {
+  opacity: 0.3;
+}
+.landingCardSlider .slick-next:before,
+.landingCardSlider .slick-prev:before {
+  border: solid $color-primary;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: relative;
+  right: 0;
+  top: 0px;
+  content: '';
+}
+.landingCardSlider .slick-prev:before {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  position: relative;
+  right: 0;
+  top: 0px;
+  content: '';
+}
+.landingCardSlider.slick-slider .slick-prev {
+  right: 69px;
+  border: solid 1px;
+}
+.landingCardSlider.slick-slider .slick-prev {
+  border-radius: 20px 0 0 20px;
+  box-shadow: 2px 0px 3px 0 rgba(0, 0, 0, 0.1);
+}
