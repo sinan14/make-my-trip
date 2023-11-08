@@ -272,3 +272,6 @@
   border: 0;
   text-align: center;
 }
+.blueDownArrow{
+  @include blueDownArrow;
+}

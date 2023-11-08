@@ -62,33 +62,6 @@ body {
 main {
   position: relative;
 }
-.flex {
-  display: flex;
-}
-.justify-content-center {
-  justify-content: center;
-}
-.space-between {
-  justify-content: space-between;
-}
-.align-items-center {
-  align-items: center;
-}
-.flex-col {
-  flex-direction: column;
-}
-.font-light {
-  font-weight: 400;
-}
-.font-bold {
-  font-weight: 700;
-}
-.text-dec-none {
-  text-decoration: none;
-}
-.pointer {
-  cursor: pointer;
-}
 .slide-desc {
   flex: 1;
   line-height: 1.8rem;

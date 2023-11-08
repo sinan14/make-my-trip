@@ -65,6 +65,15 @@
 .appendBottom5 {
   margin-bottom: 5px;
 }
+.mb5 {
+  margin-bottom: 0.5rem !important;
+}
+.mt10 {
+  margin-top: 1rem !important;
+}
+.-mt10 {
+  margin-top: -1rem !important;
+}
 .font14 {
   font-size: 14px;
   line-height: 14px;
@@ -102,4 +111,10 @@
 .font16 {
   font-size: 1.6rem;
   line-height: 1.6rem;
+}
+.absCenter {
+  @include absCenter;
+}
+.makeRelative {
+  position: relative;
 }

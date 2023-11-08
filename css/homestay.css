@@ -1,0 +1,9 @@
+.newsletter-section {
+  top: 24rem !important;
+}
+.faq-list {
+  grid-template-columns: repeat(3, 1fr);
+}
+main {
+  padding-top: 40rem !important;
+}

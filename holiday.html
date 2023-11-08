@@ -14,7 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&family=Mukta:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/holiday.css" />
   </head>
   <body>
     <div class="container">
@@ -80,7 +88,131 @@
         </nav>
       </header>
 
-      <nav class="second-nav">
+      <nav class="second-nav sticky-nav hide-stickynav" id="sticky-nav">
+        <div class="sticky-nav-container flex space-between">
+          <span class="logoContainer"
+            ><a class="chMmtLogo" href="#"
+              ><img
+                src="//imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/logo@2x.png"
+                alt="MMT's LOGO" /></a
+          ></span>
+          <ul class="second-nav-list flex">
+            <li>
+              <a class="second-nav-link" href="./index.html">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-flight"></span>
+                </span>
+                <span class="secondNavText">Flights</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="./hotel.html">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-hotels"></span>
+                </span>
+                <span class="secondNavText">Hotels</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="./homestay.html">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-homestays"></span>
+                </span>
+                <span class="secondNavText">Homestays & Villas</span>
+              </a>
+            </li>
+            <li class="active">
+              <a class="second-nav-link" href="./holiday.html">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-holiday"></span>
+                </span>
+                <span class="secondNavText">Holiday Packages</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="#">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-trains"></span>
+                </span>
+                <span class="secondNavText">Trains</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="#">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-buses"></span>
+                </span>
+                <span class="secondNavText">Buses</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="#">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-cabs"></span>
+                </span>
+                <span class="secondNavText">Cabs</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="#">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-forex"></span>
+                </span>
+                <span class="secondNavText">Forex Card & Currency</span>
+              </a>
+            </li>
+            <li>
+              <a class="second-nav-link" href="#">
+                <span class="icon-wrapper">
+                  <span class="icon-second-nav icon-insurance"></span>
+                </span>
+                <span class="secondNavText">Travel Insurance</span>
+              </a>
+            </li>
+          </ul>
+          <div class="flex align-items-center login-container-wrapper">
+            <ul class="flex align-items-center login-prompt-container cursor">
+              <li class="flex">
+                <span class="userInfoBoxLabel whiteText mr10 font10 textCenter"
+                  ><span class="chSprite chLoggedOutLogo chMy"></span
+                ></span>
+                <div class="flex align-items-center">
+                  <div class="flex space-between flex-col">
+                    <span
+                      class="font-bold login-prompt-text"
+                      style="margin-bottom: 2px"
+                      >Login or</span
+                    >
+                    <span class="font-bold login-prompt-text"
+                      >Create Account</span
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="flex align-items-center ccchangelist cursor">
+              <li class="flex blacText flex-col">
+                <p>Country</p>
+                <p class="flex align-items-center">
+                  <span class="india-flag"></span>
+                  <span class="font-bold">India</span>
+                  <span class="arrowdown"></span>
+                </p>
+              </li>
+            </ul>
+            <ul class="flex align-items-center ccchangelist">
+              <li class="flex blacText flex-col">
+                <p>Language</p>
+                <p class="flex align-items-center">
+                  <span class="font-bold">ENG</span>
+                  <span class="arrowdown"></span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav id="second-nav" class="second-nav">
         <ul class="second-nav-list flex">
           <li>
             <a class="second-nav-link" href="./index.html">
@@ -157,188 +289,673 @@
         </ul>
       </nav>
       <div class="flight-search-container">
-        <div class="journey-type-container flex">
-          <div class="radio-inputs">
-            <label class="radio-label">
-              <i class="fa-regular fa-circle"></i>
-              <input type="radio" name="journey-type" value="oneWay" />
-              One Way
-              <i class="fa-solid fa-circle-check"></i>
-            </label>
-
-            <label class="radio-label">
-              <input type="radio" name="journey-type" value="roundTrip" />
-              Round Trip
-              <i class="fa-solid fa-circle-check"></i>
-              <i class="fa-regular fa-circle"></i>
-            </label>
-
-            <label class="radio-label">
-              <input type="radio" name="journey-type" value="multiCity" />
-              Multi City
-              <i class="fa-solid fa-circle-check"></i>
-              <i class="fa-regular fa-circle"></i>
-            </label>
-          </div>
-          <p class="promo-text font-light">
-            Book international and Domestic Flights
-          </p>
+        <div
+          class="flex align-items-center justify-content-center font-light font-12 appendBottom5"
+        >
+          <span> Book your ideal Homestay - Villas, Apartments & more. </span>
         </div>
         <div class="flight-search-box flex">
           <div class="box from-box">
             <div class="inner-box">
-              <p class="text">From</p>
-              <p class="place">Mumbai</p>
-              <p class="airport-name">
-                BOM,Chatrapati Shivaji International India
-              </p>
+              <p class="text">From City</p>
+              <p class="place">Hyderabad</p>
+              <p class="airport-name">India</p>
             </div>
-            <div class="arrow-container">
-              <span class="arrow-icon"></span>
+          </div>
+          <div class="box from-box">
+            <div class="inner-box">
+              <p class="text">To City/Country/Category</p>
+              <p class="place">Goa</p>
             </div>
           </div>
 
           <div class="box to-box">
             <div class="inner-box">
-              <p class="text">To</p>
-              <p class="place">Bengaluru</p>
-              <p class="airport-name">
-                BLR,Bengaluru International Airport India
-              </p>
+              <p class="text blueDownArrow">Departure Date</p>
+
+              <p class="darkGreyText font-bold font16">Select Date</p>
             </div>
           </div>
-          <div class="box date-box">
+          <div class="box to-box">
             <div class="inner-box">
-              <p class="text">Departure</p>
-              <p class="full-date">
-                <span class="date-no">3</span
-                ><span class="date-rem">&nbsp;Nov'23</span>
-              </p>
-              <p class="airport-name">Friday</p>
+              <p class="text blueDownArrow">Rooms & Guests</p>
+
+              <p class="darkGreyText font-bold font16">Select Rooms</p>
             </div>
           </div>
-          <div class="box return-data-box">
+          <div class="box to-box">
             <div class="inner-box">
-              <p class="text">Return</p>
-              <p class="pro-desc-text">
-                Tap to add a return date for bigger discounts
+              <p class="text blueDownArrow">Filters</p>
+
+              <p class="darkGreyText font-bold font16">
+                Select Filters (Optional)
               </p>
             </div>
-          </div>
-          <div class="box travellers-no-box">
-            <div class="inner-box">
-              <p class="text">Travellers & Class</p>
-              <p class="pro-text">
-                <span class="date-no">1</span
-                ><span class="date-rem">&nbsp;Traveller</span>
-              </p>
-              <p class="airport-name">Economy/Premium Economy</p>
-            </div>
-          </div>
-        </div>
-        <div class="fare-type-container flex align-items-center">
-          <div class="fare-type-box flex align-items-center">
-            <span class="select-fare">
-              Select A<br />
-              Fare Type:
-            </span>
-            <ul class="special-fare-list flex">
-              <li class="fare-list-item active">
-                <p>
-                  Regular
-                  <br />
-                  Fares
-                </p>
-              </li>
-              <li class="fare-list-item">
-                <p>
-                  Armed Forces
-                  <br />
-                  Fares
-                </p>
-              </li>
-              <li class="fare-list-item">
-                <p>
-                  Student
-                  <br />
-                  Fares
-                </p>
-              </li>
-              <li class="fare-list-item">
-                <p>
-                  Senior Citizen
-                  <br />
-                  Fares
-                </p>
-              </li>
-              <li class="fare-list-item">
-                <p>
-                  Doctors & Nurses
-                  <br />
-                  Fares
-                </p>
-              </li>
-              <li class="fare-list-item">
-                <p>
-                  Double Seat
-                  <br />
-                  Fares
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="trending-search-box flex align-items-center">
-            <span>Trending Searches:</span>
-            <ul class="trending-list flex">
-              <li>
-                <a href="#">
-                  Delhi
-                  <span>
-                    <i class="fas fa-arrow-right"></i>
-                  </span>
-                  Dubai
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Delhi
-                  <span>
-                    <i class="fas fa-arrow-right"></i>
-                  </span>
-                  paris
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
 
         <button class="search-btn primaryBtn">SEARCH</button>
       </div>
       <main>
-        <section
-          class="forex-promo flex align-items-center"
-          style="border-color: rgb(255, 203, 202)"
-        >
-          <div>
-            <img
-              class="trip-image"
-              src="https://www.tripmoney.com/ext/static/TravelLoan/travelLoan.png"
-              alt="trip-image"
-            />
+        <section class="superOfferSection landingCard appendBottom20">
+          <div class="flex blackText appendBottom20">
+            <h2 class="fontFamilyHeading allCardsHeader">Offers</h2>
+            <div class="flex align-items-center justify-content-center">
+              <ul class="flex appendLeft30 superOffersTab">
+                <li class="flex align-items-center darkGreyText active">
+                  Holidays
+                </li>
+                <li class="latoBlack flex align-items-center darkGreyText">
+                  All offers
+                </li>
+                <li class="flex align-items-center darkGreyText">Hotels</li>
+                <li class="flex align-items-center darkGreyText">Flights</li>
+                <li class="flex align-items-center darkGreyText">Bus</li>
+                <li class="flex align-items-center darkGreyText">
+                  Bank Offers
+                </li>
+              </ul>
+            </div>
+            <div
+              class="capText pushRight flex align-items-center font16 primaryText latoBlack cursor viewAllCta"
+            >
+              View All<span
+                class="blueArrowIcon landingSprite appendLeft10"
+              ></span>
+            </div>
           </div>
-          <div class="promo-text-box flex flex-col">
-            <span class="forex-logo">&nbsp;</span>
-            <p class="promo-text">
-              Forex
-              <span class="latoRegular">
-                at best exchange rates delivered at your doorstep</span
-              >
-            </p>
+
+          <div class="offerlist-container landingCardSlider superOffers">
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Price-drop-DT-031023.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          Live Now: PACKAGE PRICE DROP DAYS!
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Grab FLAT 45% OFF* on Holiday Packages
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div
+                          class="blackText font18 lineHeight22 appendBottom10 latoBlack"
+                        >
+                          It’s Now EASIER-THAN-EVER to Plan Trips to
+                        </div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16 darkGreyText">
+                        Baku, Cairo, Almaty, Tashkent, Nairobi & more! So,
+                        explore hotels & book with us NOW.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <a class="forex-rightarrow"
-            >Order Now<span class="blueArrowIcon"></span
-          ></a>
         </section>
+
         <section class="newsletter-section">
           <div class="newsletter-card flex">
             <div>
@@ -349,8 +966,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Chennai Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi,Mumbai,Coimbatore,Madurai</p>
+              <h2>Goa</h2>
+              <p>Homestays&nbsp;-&nbsp;Villas&nbsp;&&nbsp;Apts</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -362,8 +979,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Goa Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi, Mumbai,Bangalore,Ahmedabad</p>
+              <h2>Mumbai</h2>
+              <p>Homestays&nbsp;-&nbsp;Villas&nbsp;&&nbsp;Apts</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -375,8 +992,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Mumbai Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi, Bangalore, Chennai, Ahmedabad</p>
+              <h2>Mukteshwar</h2>
+              <p>Homestays&nbsp;-&nbsp;Villas&nbsp;&&nbsp;Apts</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -388,8 +1005,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Hyderabad Flights</h2>
-              <p>Via&nbsp;-&nbsp;Chennai, Mumbai, Bangalore, Delhi</p>
+              <h2>Hyderabad</h2>
+              <p>Homestays&nbsp;-&nbsp;Villas&nbsp;&&nbsp;Apts</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -401,8 +1018,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Delhi Flights</h2>
-              <p>Via&nbsp;-&nbsp;Mumbai, Pune, Bangalore, Chennai</p>
+              <h2>Gokarna</h2>
+              <p>Homestays&nbsp;-&nbsp;Villas&nbsp;&&nbsp;Apts</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -414,8 +1031,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Pune Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi, Bangalore, Chennai, Ahmedabad</p>
+              <h2>Malvan</h2>
+              <p>Homestays&nbsp;-&nbsp;Villas&nbsp;&&nbsp;Apts</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -427,8 +1044,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Kolkata Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi, Mumbai, Bangalore, Pune</p>
+              <h2>Kasool</h2>
+              <p>Homestays&nbsp;-&nbsp;Villas&nbsp;&&nbsp;Apts</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -440,8 +1057,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Bangalore Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi, Pune, Mumbai, Kolkata</p>
+              <h2>Jibhi</h2>
+              <p>Homestays&nbsp;-&nbsp;Villas&nbsp;&&nbsp;Apts</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -453,8 +1070,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Jaipur Flights</h2>
-              <p>Via&nbsp;-&nbsp;Mumbai, Delhi, Pune, Bangalore</p>
+              <h2>Jaipur</h2>
+              <p>Homestays&nbsp;-&nbsp;Villas&nbsp;&&nbsp;Apts</p>
             </div>
           </div>
         </section>
@@ -771,61 +1388,47 @@
         <ul class="faq-list">
           <li class="faq">
             <h2 class="faq-Q">
-              Q - How do I make a flight booking on MakeMyTrip?
+              Why Book Hotels on the Country's Best Travel Site?
             </h2>
             <p class="faq-A">
-              A: You can book a flight on MakeMyTrip in five easy steps: Head
-              over to the MakeMyTrip flight booking page, Enter your departure
-              and arrival destinations, Select your air travel dates, Choose
-              from our wide range of cheap flights based on your airfare
-              preferences, Click on ‘Book Now’ and your air flight booking is
-              done. Alternatively, you can also use the MakeMyTrip app for your
-              flight ticket booking. Download the MakeMyTrip app, Put in the
-              details i.e. date of journey, departure and arrival destinations,
-              travel class of your choice, Select on your best comfortable
-              option and click on 'Book Now'.
+              Planning a vacation or business trip, and haven't found a hotel
+              yet? Then use our web portal to find a hotel, which suits you in
+              every way. The best travel site in India, Makemytrip has the
+              largest database of hotels in the country and outside. Our
+              user-friendly website makes online hotel booking an easy task,
+              which can be completed in mere minutes.
             </p>
           </li>
           <li class="faq">
-            <h2 class="faq-Q">
-              Q - Can I avail domestic flight offers on MakeMyTrip?
-            </h2>
+            <h2 class="faq-Q">How to book hotels on Makemytrip.com?</h2>
             <p class="faq-A">
-              A: Of course, you can. While making domestic flight bookings, you
-              can avail any special offer that is active at that time. In
-              accordance with the offer selected, a listing of eligible cheapest
-              flights would show up on your screen. You can then apply the price
-              filter and click on the downwards arrow, following which
-              budget-friendly flights would start showing up in ascending order
-              from the top (lowest price on top).
+              Now, suppose you are travelling to Goa. All you have to do is
+              click on the 'Hotels' tab on the homepage, and press the
+              'Domestic' button. After typing Goa under the 'I WANT TO GO'
+              header, select your option. Then, enter the check-in and check-out
+              dates, and tell us the number of adults and children, for whom the
+              booking is to be made. On clicking the 'Search Hotels' button, all
+              the accommodation options are displayed on a single page. To make
+              your task easier, our portal is provided with filters that you can
+              use to narrow down your search. You can refine the results on the
+              basis of star category, location, area, price range and even the
+              facilities you want.
             </p>
           </li>
           <li class="faq">
-            <h2 class="faq-Q">
-              Q - How can I avail budget air tickets on MakeMyTrip?
-            </h2>
+            <h2 class="faq-Q">What Makemytrip.com has in store for you?</h2>
             <p class="faq-A">
-              A: It’s super-easy to avail budget airfare while booking your
-              cheap flight tickets on MakeMyTrip. Just select the ‘Price’ filter
-              once the available flight options are displayed and adjust
-              according to your convenience. On the MakeMyTrip app, you can
-              select the downward arrow, which will show the lowest airfare at
-              the top and continue downward in ascending order.
-            </p>
-          </li>
-          <li class="faq">
-            <h2 class="faq-Q">
-              Q - Why could I not avail the flight booking offers at the time of
-              checkout?
-            </h2>
-            <p class="faq-A">
-              A: MakeMyTrip makes use of a world-class real-time reservation
-              database to list airfare and availability. As dynamic changes in
-              airfare take place, or the available flight tickets sell out, the
-              database reflects the changes in real-time. Hence, we suggest, you
-              double-check online flight booking prices when purchasing flight
-              tickets, as the airfare might have been dynamically updated since
-              you first selected the air travel dates or planned your itinerary.
+              We have all sorts of hotels, ranging from luxury to cheap, so
+              whatever be your requirement, you will get the accommodation. When
+              you find the hotel of your choice, just click on its name to see
+              its detailed description. Apart from Goa, our database includes
+              myriad properties in all holiday and business destinations in
+              India. Our payment gateway is totally secure, so all your bank
+              details are safe. A smooth transfer process means that making
+              payment is as swift as searching the hotel. So, whether you are
+              looking for budget or upscale hotels in Delhi, Shimla, Mumbai,
+              Chennai or any other destination, visit Makemytrip, and get the
+              best deal.
             </p>
           </li>
         </ul>
@@ -860,5 +1463,31 @@
         </div>
       </footer>
     </div>
+    <script src="./js/sticky-header.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.offerlist-container').slick({
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 1,
+          centerMode: false,
+          variableWidth: true,
+        });
+      });
+    </script>
   </body>
 </html>

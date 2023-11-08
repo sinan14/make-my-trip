@@ -20,3 +20,29 @@
     } //1800
   }
 }
+@mixin blueDownArrow {
+  &::after {
+    border: solid $color-primary;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    content: '';
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    vertical-align: top;
+    margin: 3px 0 0 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
