@@ -12,6 +12,11 @@
     margin-right: 2rem;
     font-size: 1.4rem;
     font-weight: 400;
+    &.active {
+      background: #eaf5ff;
+      border-radius: 8px;
+      padding: 2px 1rem 2px 2rem;
+    }
   }
 
   .radio-label input[type='radio'] {
@@ -61,6 +66,9 @@
   border-right: solid 1px #e7e7e7;
 }
 .box {
+  &:hover {
+    background: #eaf5ff;
+  }
   &.from-box,
   &.to-box {
     width: 300px;
@@ -272,6 +280,6 @@
   border: 0;
   text-align: center;
 }
-.blueDownArrow{
+.blueDownArrow {
   @include blueDownArrow;
 }

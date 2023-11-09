@@ -698,6 +698,11 @@ main {
   font-size: 1.4rem;
   font-weight: 400;
 }
+.flight-search-container .radio-label.active {
+  background: #eaf5ff;
+  border-radius: 8px;
+  padding: 2px 1rem 2px 2rem;
+}
 .flight-search-container .radio-label input[type=radio] {
   display: none;
 }
@@ -746,6 +751,9 @@ main {
   border-right: solid 1px #e7e7e7;
 }
 
+.box:hover {
+  background: #eaf5ff;
+}
 .box.from-box, .box.to-box {
   width: 300px;
   position: relative;
