@@ -298,7 +298,7 @@ main {
 }
 
 .icon-suitcase {
-  background-image: url("./../../assets/icons/suitcase.png");
+  background-image: url("./../assets/icons/suitcase.png");
 }
 
 .nav-link-header {
@@ -638,7 +638,7 @@ main {
   background-color: transparent;
   background-position: -177px -350px;
   background-size: 260px 400px;
-  background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png) !important;
+  background-image: url(https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png) !important;
   background-repeat: no-repeat;
 }
 .sticky-nav .login-prompt-container .login-prompt-text {
