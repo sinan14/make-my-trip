@@ -14,7 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&family=Mukta:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
@@ -162,43 +169,43 @@
             <label class="radio-label">
               <i class="fa-regular fa-circle"></i>
               <input type="radio" name="journey-type" value="oneWay" />
-              One Way
+              Upto 4 Rooms
               <i class="fa-solid fa-circle-check"></i>
             </label>
 
-            <label class="radio-label">
+            <label class="radio-label" id="group-deals">
               <input type="radio" name="journey-type" value="roundTrip" />
-              Round Trip
+              Group Deals
               <i class="fa-solid fa-circle-check"></i>
               <i class="fa-regular fa-circle"></i>
             </label>
 
-            <label class="radio-label">
-              <input type="radio" name="journey-type" value="multiCity" />
-              Multi City
-              <i class="fa-solid fa-circle-check"></i>
-              <i class="fa-regular fa-circle"></i>
-            </label>
+            <!-- <label class="radio-label">
+              <-- <input type="radio" name="journey-type" value="multiCity" />
+              Multi City -->
+              <!-- <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-regular fa-circle"></i> -->
+            <!-- </label> --> 
           </div>
-          <p class="promo-text font-light">
-            Book international and Domestic Flights
+          <p class="Domestic-hotel">
+            Book Domestic and international property online.To book your property <a href="">Click Here</a>
           </p>
         </div>
         <div class="flight-search-box flex">
           <div class="box from-box">
             <div class="inner-box">
-              <p class="text">From</p>
-              <p class="place">Mumbai</p>
+              <p class="text">City,Propert Name or Location</p>
+              <p class="place">Goa</p>
               <p class="airport-name">
-                BOM,Chatrapati Shivaji International India
+                India
               </p>
             </div>
-            <div class="arrow-container">
-              <span class="arrow-icon"></span>
-            </div>
+            <!-- <div class="arrow-container"> -->
+              <!-- <span class="arrow-icon"></span> -->
+            <!-- </div> -->
           </div>
 
-          <div class="box to-box">
+          <!-- <div class="box to-box">
             <div class="inner-box">
               <p class="text">To</p>
               <p class="place">Bengaluru</p>
@@ -206,10 +213,11 @@
                 BLR,Bengaluru International Airport India
               </p>
             </div>
-          </div>
+          </div> -->
           <div class="box date-box">
             <div class="inner-box">
-              <p class="text">Departure</p>
+              <p class="text">Check in
+             <span><i class="fa-solid fa-angle-down" style="color: #0f55cc;"></i></span> </p>
               <p class="full-date">
                 <span class="date-no">3</span
                 ><span class="date-rem">&nbsp;Nov'23</span>
@@ -219,52 +227,75 @@
           </div>
           <div class="box return-data-box">
             <div class="inner-box">
-              <p class="text">Return</p>
-              <p class="pro-desc-text">
-                Tap to add a return date for bigger discounts
+              <p class="text">Check-out
+              <span><i class="fa-solid fa-angle-down" style="color: #0f55cc;"></i></span></p>
+              <p class="full-date">
+                <span class="date-no">7</span
+                ><span class="date-rem">&nbsp;Nov'23</span>
+                <p class="airport-name">Tuesday</p>
               </p>
+              <!-- <p class="pro-desc-text">
+                Tap to add a return date for bigger discounts
+              </p> -->
             </div>
           </div>
           <div class="box travellers-no-box">
             <div class="inner-box">
-              <p class="text">Travellers & Class</p>
+              <p class="text">Rooms & Guests</p>
               <p class="pro-text">
                 <span class="date-no">1</span
-                ><span class="date-rem">&nbsp;Traveller</span>
+                ><span class="date-rem">&nbsp;Room</span>
+                <span class="date-no">2</span>
+                <span class="date-rem">&nbsp;Adults</span>
               </p>
-              <p class="airport-name">Economy/Premium Economy</p>
+              <!-- <p class="airport-name">Economy/Premium Economy</p> -->
             </div>
           </div>
+
+            <div class="price-per-night">
+              <div class="inner-box">
+                <p class="text">Price per night
+                <span><i class="fa-solid fa-angle-down" style="color: #0f55cc;"></i></span></p>
+                <p class="full-date">
+                  <span class="date-no"></span
+                  ><span class="date-rem">&nbsp;Rs 0-1500,1500-2500...</span>
+                  <!-- <p class="airport-name">Tuesday</p> -->
+                </p>
+                <!-- <p class="pro-desc-text">
+                  Tap to add a return date for bigger discounts
+                </p> -->
+              </div>
+              </div>
+          </div>
         </div>
-        <div class="fare-type-container flex align-items-center">
+        <!-- <div class="fare-type-container flex align-items-center">
           <div class="fare-type-box flex align-items-center">
             <span class="select-fare">
-              Select A<br />
-              Fare Type:
+             Trending searches
             </span>
             <ul class="special-fare-list flex">
               <li class="fare-list-item active">
                 <p>
-                  Regular
-                  <br />
-                  Fares
-                </p>
+                  Bangkok,Thailand
+                   <br />
+                  Fares -->
+                <!-- </p>
               </li>
               <li class="fare-list-item">
                 <p>
-                  Armed Forces
-                  <br />
-                  Fares
-                </p>
+                  New York,United States
+                   <br />
+                  Fares -->
+                <!-- </p>
               </li>
               <li class="fare-list-item">
                 <p>
-                  Student
-                  <br />
-                  Fares
-                </p>
-              </li>
-              <li class="fare-list-item">
+                 Singapore,Singapore
+                   <br /> -->
+                  <!-- Fares  -->
+                <!-- </p>
+              </li>  -->
+              <!-- <li class="fare-list-item">
                 <p>
                   Senior Citizen
                   <br />
@@ -284,10 +315,20 @@
                   <br />
                   Fares
                 </p>
-              </li>
-            </ul>
+              </li> -->
+            <!-- </ul>
           </div>
-          <div class="trending-search-box flex align-items-center">
+          </div>  -->
+          <div class="hotel-bar">
+              <p class="trending-hotelbar">Trending Searches: &nbsp;&nbsp;
+              <a href=""><button class="London-button">London,United Kingdom</button></a>&nbsp;&nbsp;
+              <a href=""></a><button class="London-button">New York,United States</button></a>&nbsp;&nbsp;
+              <a href=""></a><button class="London-button">Mumbai,India</button></a>
+            </p>
+          </div>
+          <button class="search-btn primaryBtn">SEARCH</button>
+        
+          <!-- <div class="trending-search-box flex align-items-center">
             <span>Trending Searches:</span>
             <ul class="trending-list flex">
               <li>
@@ -310,10 +351,674 @@
               </li>
             </ul>
           </div>
+        </div> -->
+        <div class="luxe">
+             <span class="introduce">INTRODUCING</span>
+             <span class="MMT"><b>MMT Luxe</b></span>
+             <span class="selection"><b>Selections</b></span>
+             <span class="epitome">Escape to the epitome of Luxury,packed with</span>
+              <span class="signature-amini">signature amenities and services</span>
+              <span class="learn">Learn More</span>
+              <div class="box1">
+                <img src="https://promos.makemytrip.com/Hotels_product/Luxe/brands.png" id="luxe1">
+                <span class="luxe-india"><b>Luxe Properties in</span>
+                  <span class="luxe-india-1"> India</b></span>
+                <span class="luxe-india-small">Explore by Luxuary </span>
+                 <span class="luxe-india-small1" >brands,and</span>
+                  <span class="luxe-india-small1">and top picks</span>
+              </div>
+              <div class="box2">
+                <img src="https://promos.makemytrip.com/altacco_luxe/imgs/luxe_villa.jpg" id="luxe2">
+                <span class="luxe-india1"><b>Luxe Villas</span>
+                  <span class="paras">Premium </span>
+                  <span id="paras">Villas with superlative experience</span>
+                  
+              </div>
+              <div class="box3">
+                <img src="https://promos.makemytrip.com/notification/xhdpi/maldives.jpg" id="luxe3">
+                <span class="luxe-india1"><b>Luxe International</span>
+                  <span class="Dubai1">Dubai,Maldives,Thailand and More</span> 
+              </div>
         </div>
+        <section class="superOfferSection landingCard appendBottom20">
+          <div class="flex blackText appendBottom20">
+            <h2 class="fontFamilyHeading allCardsHeader">Offers</h2>
+            <div class="flex align-items-center justify-content-center">
+              <ul class="flex appendLeft30 superOffersTab">
+                <li class="active latoBlack flex align-items-center">
+                  Hotels
+                </li>
+                <li class="flex align-items-center darkGreyText">
+                  Bank Offers
+                </li>
+                <li class="flex align-items-center darkGreyText">Flights</li>
+                <li class="flex align-items-center darkGreyText">Hotels</li>
+                <li class="flex align-items-center darkGreyText">Holidays</li>
+                <li class="flex align-items-center darkGreyText">Trains</li>
+                <li class="flex align-items-center darkGreyText">Cabs</li>
+              </ul>
+            </div>
+            <div
+              class="capText pushRight flex align-items-center font16 primaryText latoBlack cursor viewAllCta"
+            >
+              View All<span
+                class="blueArrowIcon landingSprite appendLeft10"
+              ></span>
+            </div>
+          </div>
 
-        <button class="search-btn primaryBtn">SEARCH</button>
-      </div>
+          <div class="offerlist-container-landingCardSlider-superOffers">
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//Desktop-OND-Campaign-3Nov.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc" id="hotel1">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">Book your Preffered stay basis location, aminities..</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        +get 20% discount on 1st booking
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item" id="hotel2">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/images//Desktop-thailand-060923.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">Book your Preffered stay basis location, aminities..</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        +get 20% discount on 1st booking
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item" id="hotel3">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/images//Desktop-Ih-Newdestination-310823.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc" id="3-hotel">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">Book your Preffered stay basis location, aminities..</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        +get 20% discount on 1st booking
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item" id="hotel4">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//country-inn-116x116-01052023.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">Book your Preffered stay basis location, aminities..</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        +get 20% discount on 1st booking
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//116X116-vistara-sale-15092023.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">DOM FLIGHTS</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        Book domestic flights starting @ JUST Rs. 1,999!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//116X116-vistara-sale-15092023.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">DOM FLIGHTS</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        Book domestic flights starting @ JUST Rs. 1,999!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//116X116-vistara-sale-15092023.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div> -->
+                    <!-- <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">DOM FLIGHTS</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        Book domestic flights starting @ JUST Rs. 1,999!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//116X116-vistara-sale-15092023.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">DOM FLIGHTS</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        Book domestic flights starting @ JUST Rs. 1,999!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//116X116-vistara-sale-15092023.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">DOM FLIGHTS</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        Book domestic flights starting @ JUST Rs. 1,999!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//116X116-vistara-sale-15092023.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">DOM FLIGHTS</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        Book domestic flights starting @ JUST Rs. 1,999!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col" style="width: 48.4rem; outline: none">
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//116X116-vistara-sale-15092023.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">DOM FLIGHTS</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        Book domestic flights starting @ JUST Rs. 1,999!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-item">
+                <div class="flex flex-col offer-card">
+                  <div class="flex cardInnerinfo">
+                    <div
+                      class="flex flex-col align-items-center itemThumb appendRight20"
+                    >
+                      <div class="itemImgWrap makeRelative">
+                        <img
+                          src="https://promos.makemytrip.com/notification/xhdpi//116X116-vistara-sale-15092023.jpg?im=Resize=(134,134)"
+                          height="134"
+                          width="134"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="itemDesc">
+                      <div
+                        class="font12 latoBold appendBottom5 offer-card-title"
+                      >
+                        <div class="appendBottom5">DOM FLIGHTS</div>
+                      </div>
+                      <span class="redBdr appendBottom10"></span>
+                      <p class="font14 lineHeight16">
+                        Book domestic flights starting @ JUST Rs. 1,999!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="sliderFoot">
+                    <span class="sliderFoot__left">
+                      <span
+                        class="darkGreyText font12 tcApplyText appendRight20"
+                        >T&amp;C's Apply</span
+                      >
+                    </span>
+                    <div class="flex align-items-center space-between flexOne">
+                      <span class="font-light font14 darkText"
+                        >Code: Price Lock
+                      </span>
+                      <a class="font14 primaryText latoBlack pushRight capText"
+                        >Book Now</a -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feature-promos flex space-between">
+          <div class="promo-slide flex align-items-center pointer">
+            <div class="flex align-items-center justify-content-center">
+              <img
+                class="dealCarouselImg"
+                alt="img"
+                src="https://promos.makemytrip.com/notification/xhdpi/Vande-Flight-10072020.png"
+                height="68px"
+                width="68px"
+              />
+            </div>
+            <p class="slide-desc">
+              Planning to book an international flight?<br /><a
+                >Check Travel Guidelines</a
+              >
+            </p>
+          </div>
+          <div class="promo-slide flex align-items-center pointer">
+            <div class="flex align-items-center justify-content-center">
+              <img
+                alt=""
+                src="https://promos.makemytrip.com/Growth/Images/B2C/2x/language1@2x_20210901.png"
+                height="68px"
+                width="68px"
+              />
+            </div>
+            <p class="slide-desc">
+              We are now available in हिंदी!<br /><a>Change Language</a>
+            </p>
+          </div>
+          <div class="promo-slide flex align-items-center pointer">
+            <div class="flex align-items-center justify-content-center">
+              <img
+                src="https://promos.makemytrip.com/notification/xhdpi/web-check-in-116x116-23062020.png"
+                height="68px"
+                width="68px"
+              />
+            </div>
+            <p class="slide-desc">
+              Complete your web check-in on MakeMyTrip in easy steps. <br /><a
+                >Know more</a
+              >
+            </p>
+          </div>
+        </section>
+       
       <main>
         <section
           class="forex-promo flex align-items-center"
@@ -349,8 +1054,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Chennai Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi,Mumbai,Coimbatore,Madurai</p>
+              <h2>Goa</h2>
+              <p>Hotels,Budget Hotels,Resorts,Best Hotels,North Goa,Villas</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -362,8 +1067,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Goa Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi, Mumbai,Bangalore,Ahmedabad</p>
+              <h2>Andaman&Nicobar</h2>
+              <p>Hotels,Budget Hotels,Resorts,Best Hotels,Seafront Resorts</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -375,8 +1080,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Mumbai Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi, Bangalore, Chennai, Ahmedabad</p>
+              <h2>Mumbai </h2>
+              <p>Hotels,Budget Hotels,Resorts,Best Hotels,Near Mumbai Airport</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -388,8 +1093,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Hyderabad Flights</h2>
-              <p>Via&nbsp;-&nbsp;Chennai, Mumbai, Bangalore, Delhi</p>
+              <h2>Hyderabad </h2>
+              <p>Hotels,Budget Hotels,Resorts,Best Hotels,Villas</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -401,8 +1106,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Delhi Flights</h2>
-              <p>Via&nbsp;-&nbsp;Mumbai, Pune, Bangalore, Chennai</p>
+              <h2>Delhi </h2>
+              <p>Hotels,Budget Hotels,Resorts,Best Hotels,Near IGI Airport</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -414,8 +1119,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Pune Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi, Bangalore, Chennai, Ahmedabad</p>
+              <h2>Pune </h2>
+              <p>Hotels,Budget Hotels,Resorts,Best Hotels,Camps</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -427,8 +1132,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Kolkata Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi, Mumbai, Bangalore, Pune</p>
+              <h2>Kolkata </h2>
+              <p>Hotels,Budget Hotels,Resorts,Best Hotels,Near Railway Station,Villas</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -440,8 +1145,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Bangalore Flights</h2>
-              <p>Via&nbsp;-&nbsp;Delhi, Pune, Mumbai, Kolkata</p>
+              <h2>Bangalore </h2>
+              <p>Hotels,Budget Hotels,Resorts,Best Hotels,Near Airport,Guhantara Resort</p>
             </div>
           </div>
           <div class="newsletter-card flex">
@@ -453,8 +1158,8 @@
               />
             </div>
             <div class="card-data">
-              <h2>Jaipur Flights</h2>
-              <p>Via&nbsp;-&nbsp;Mumbai, Delhi, Pune, Bangalore</p>
+              <h2>Jaipur </h2>
+              <p>Hotels,Budget Hotels,Resorts,Best Hotels,Near Railway Station</p>
             </div>
           </div>
         </section>
@@ -771,7 +1476,7 @@
         <ul class="faq-list">
           <li class="faq">
             <h2 class="faq-Q">
-              Q - How do I make a flight booking on MakeMyTrip?
+              Q - How do I make a hotel booking on MakeMyTrip?
             </h2>
             <p class="faq-A">
               A: You can book a flight on MakeMyTrip in five easy steps: Head
@@ -788,7 +1493,7 @@
           </li>
           <li class="faq">
             <h2 class="faq-Q">
-              Q - Can I avail domestic flight offers on MakeMyTrip?
+              Q - Can I avail Hotel offers on MakeMyTrip?
             </h2>
             <p class="faq-A">
               A: Of course, you can. While making domestic flight bookings, you
@@ -802,7 +1507,7 @@
           </li>
           <li class="faq">
             <h2 class="faq-Q">
-              Q - How can I avail budget air tickets on MakeMyTrip?
+              Q - How to find best hotles near me?
             </h2>
             <p class="faq-A">
               A: It’s super-easy to avail budget airfare while booking your
@@ -815,8 +1520,7 @@
           </li>
           <li class="faq">
             <h2 class="faq-Q">
-              Q - Why could I not avail the flight booking offers at the time of
-              checkout?
+              Q - Where can i find current offers in Make My Trip?
             </h2>
             <p class="faq-A">
               A: MakeMyTrip makes use of a world-class real-time reservation
@@ -860,5 +1564,18 @@
         </div>
       </footer>
     </div>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
   </body>
 </html>
+
