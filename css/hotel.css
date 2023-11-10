@@ -176,7 +176,7 @@ main {
 }
 
 .icon-suitcase {
-  background-image: url("./../../assets/icons/suitcase.png");
+  background-image: url("./../assets/icons/suitcase.png");
 }
 
 .nav-link-header {
@@ -1189,7 +1189,7 @@ section forex promo start
   color: black;
 }
 #group-deals ::after{
-  content: "NEW";
+  /* content: "NEW"; */
   position: absolute;
   display: flex;
   align-items: flex-start;
